@@ -177,7 +177,7 @@ body {
 
 /* ===== SECCIÓN ABOGADOS ===== */
 #abogados-barra {
-  background-image: url("/img/Pillar.jpg");
+  background-image: url("img/Pillar.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 0px;
@@ -308,7 +308,7 @@ body {
 
 /* ===== SECCIÓN MAPA ===== */
 .seccion-mapa {
-  background-image: url("/img/location.jpg") !important;
+  background-image: url("img/location.jpg") !important;
   background-size: cover;
   background-position: center;
   padding-bottom: 50px;
@@ -422,7 +422,7 @@ body {
 
 /* ===== FOOTER ===== */
 .footer-minimalista {
-  background-image: url("/img/footer.jpg");
+  background-image: url("img/footer.jpg");
   background-size: cover;
   background-position: center;
   background-color: #ffffff;
