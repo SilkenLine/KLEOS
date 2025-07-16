@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KLEOS - Despacho Jurídico</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fuente elegante -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- En tu HTML -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid px-4">
+        <!-- Botón hamburguesa -->
+        <button
+          class="navbar-toggler order-1 custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo centrado -->
+        <a
+          class="navbar-brand order-2 order-lg-2 mx-auto position-absolute start-50 translate-middle-x"
+          href="#"
+          style="width: 100vw"
+        >
+          <img
+            src="/img/logo-sin fondo.png"
+            alt="Logo"
+            class="d-none d-lg-block"
+            style="height: 150px; margin-top: 15px; justify-self: center"
+          />
+          <img
+            src="/img/logo-h.png"
+            alt="Logo"
+            class="d-lg-none"
+            style="height: 70px; margin-top: 0px; margin-left: 20px"
+          />
+        </a>
+
+        <!-- Contenedor vacío para balancear -->
+        <div class="order-3 order-lg-3 invisible" style="width: 48px"></div>
+
+        <!-- Menú colapsable (todos los items) -->
+        <div class="collapse navbar-collapse order-4" id="navbarCollapse">
+          <div class="d-flex flex-column flex-lg-row w-100">
+            <!-- Lado izquierdo -->
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-evenly flex-grow-1"
+            >
+              <a
+                class="nav-link active"
+                href="#"
+                style="color: #ac9670 !important; border: none !important"
+                >INICIO</a
+              >
+              <a class="nav-link" href="#">NOSOTROS</a>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="serviciosDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SERVICIOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"> ASESORÍA CORPORATIVA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      DERECHO CIVIL Y MERCANTIL</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> DERECHO LABORAL</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> DERECHO FAMILIAR</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#"> DERECHO PENAL</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      SISTEMA INTEGRAL DE JUSTICIA PENAL PARA ADOLESCENTES</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div style="width: 150px"></div>
+            <!-- Lado derecho -->
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-evenly flex-grow-1"
+            >
+              <a class="nav-link" href="#">UBICACIÓN</a>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="serviciosDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ASOCIADOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"> CONTABILIDAD</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      PROGRAMACIÓN E INFORMATICA</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a class="nav-link" href="#">CASOS DE EXÍTO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Carrusel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide w-100"
+      data-bs-ride="carousel"
+      data-bs-interval="null"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- PRIMERA IMAGEN -->
+        <div class="carousel-item active position-relative">
+          <img
+            src="/img/3.jpg"
+            class="d-block w-100 carousel-img"
+            alt="Imagen 1"
+            style="filter: blur(0px) brightness(0.4); object-position: left"
+          />
+          <div
+            class="position-absolute top-50 start-50 translate-middle text-center text-white px-3"
+          >
+            <div class="linea-decorativa mb-3"></div>
+            <h1 class="titulo-carrusel d-none d-md-block">
+              Consultoría Jurídica Integral <br />KLEOS
+            </h1>
+            <p class="slogan-carrusel mt-3">
+              “Defendemos tus derechos con conocimiento y carácter”
+            </p>
+            <div class="linea-decorativa mt-3"></div>
+            <a href="#abogados-barra" class="btn btn-contact mt-4"
+              >Contáctanos</a
+            >
+          </div>
+        </div>
+
+        <!-- SEGUNDA IMAGEN -->
+        <div class="carousel-item">
+          <img
+            src="https://wallpapersok.com/images/hd/monochrome-lawyer-scales-ouqsj5h0cf9421u8.jpg"
+            class="d-block w-100"
+            alt="Imagen 2"
+          />
+        </div>
+
+        <!-- TERCERA IMAGEN -->
+        <div class="carousel-item">
+          <img
+            src="https://wallpapersok.com/images/hd/monochrome-lawyer-scales-ouqsj5h0cf9421u8.jpg"
+            class="d-block w-100"
+            alt="Imagen 3"
+          />
+        </div>
+      </div>
+
+      <!-- CONTROLES -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <!-- Sección Presentación -->
+    <section id="presentacion" class="seccion-presentacion py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Texto -->
+          <div class="col-md-6">
+            <h2 class="titulo-seccion-presentacion mb-3">NUESTRA FIRMA</h2>
+            <div class="linea-decorativa2 mb-4"></div>
+            <p class="texto-presentacion">
+              En
+              <strong>CONSULTORÍA JURÍDICA INTEGRAL “KLEOS”</strong> ofrecemos
+              asesoría y representación jurídica con más de 10 años de
+              experiencia en áreas como derecho civil, penal, familiar y
+              mercantil.
+            </p>
+            <p class="texto-presentacion">
+              Nuestro equipo está formado por abogados, contadores y peritos
+              especializados que garantizan un servicio integral y eficiente en
+              todo el país.
+            </p>
+            <p class="texto-presentacion">
+              Trabajamos con ética, compromiso y atención personalizada para
+              brindar soluciones legales efectivas y adaptadas a cada cliente.
+            </p>
+          </div>
+
+          <!-- Imagen -->
+          <div class="col-md-6 text-center">
+            <img
+              src="/img/book.png"
+              alt="Imagen de presentación jurídica"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección abogados -->
+
+    <section id="abogados-barra" class="container-fluid">
+      <div class="container contenedor-titulos-secciones">
+        <h2 class="titulo-secciones">FUNDADORES "KLEOS"</h2>
+        <div class="linea-decorativa2"></div>
+      </div>
+      <div class="container py-5 col-lg-8">
+        <!-- Abogado 1 -->
+        <div class="row align-items-center mb-5 gy-3 abogado-card">
+          <div class="col-md-3 text-center">
+            <div class="abogado-circle mx-auto">
+              <img
+                src="/img/ABOGADOS/cesaria.jpg"
+                alt="Mtro. César Castillo Nava"
+              />
+            </div>
+          </div>
+          <div class="col-md-8 ms-md-1">
+            <h4 class="mb-1 abogado-nombre">Mtro. César Castillo Nava</h4>
+
+            <p class="mb-2 abogado-descripcion">
+              Especialista en Derecho Penal con más de 10 años de experiencia en
+              defensa y litigio estratégico.
+            </p>
+            <p class="mb-1">
+              <i class="bi bi-telephone-fill me-2"></i> (55) 9876 5432
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i> cesar.castillo@kleos.mx
+            </p>
+          </div>
+        </div>
+
+        <!-- Abogado 2 -->
+        <div
+          class="row align-items-center gy-3 flex-md-row-reverse abogado-card"
+        >
+          <div class="col-md-3 text-center">
+            <div class="abogado-circle mx-auto">
+              <img
+                src="/img/ABOGADOS/ndia.jpg"
+                alt="Lic. Nadia E. Hernández Fragoso"
+              />
+            </div>
+          </div>
+          <div class="col-md-8 me-md-1">
+            <h4 class="mb-1 abogado-nombre">Lic. Nadia E. Hernández Fragoso</h4>
+            <p class="mb-2 abogado-descripcion">
+              Especialista en Derecho Civil y Familiar, comprometida con el
+              bienestar legal de nuestros clientes.
+            </p>
+            <p class="mb-1">
+              <i class="bi bi-telephone-fill me-2"></i> (55) 1122 3344
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i> nadia.hernandez@kleos.mx
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Servicios -->
+    <section id="servicios" class="container py-5">
+      <div class="contenedor-titulos-secciones">
+        <h2 class="titulo-secciones">SERVICIOS QUE SE BRINDAN</h2>
+        <div class="linea-decorativa2 mb-4"></div>
+        <p class="col-md-10">
+          En KLEOS ofrecemos atención legal especializada en distintas ramas del
+          derecho para brindar soluciones integrales y personalizadas.
+        </p>
+      </div>
+
+      <div class="d-flex flex-column align-items-center gap-4">
+        <!-- Servicio 1: Asesoría Corporativa -->
+        <div class="servicio-min-card">
+          <div class="servicio-img">
+            <img
+              src="https://images.pexels.com/photos/23496879/pexels-photo-23496879.jpeg?cs=srgb&dl=pexels-silverkblack-23496879.jpg&fm=jpg"
+              alt="Asesoría Corporativa"
+            />
+          </div>
+          <div class="servicio-info">
+            <h4>ASESORÍA CORPORATIVA</h4>
+            <div class="linea-decorativa2"></div>
+            <p class="intro">
+              Asesoramiento legal para la correcta constitución, administración
+              y operación de empresas.
+            </p>
+            <ul>
+              <li>
+                Elaboración y modificación de estatutos y actas de asamblea
+              </li>
+              <li>Proyectos de fusión o escisión</li>
+              <li>Elaboración y revisión de contratos mercantiles</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Servicio 2: Derecho Civil y Mercantil -->
+        <div class="servicio-min-card reverse">
+          <div class="servicio-img">
+            <img
+              src="https://png.pngtree.com/thumb_back/fw800/background/20240705/pngtree-real-estate-agent-holding-house-model-in-his-hands-concept-image_15951775.jpg"
+              alt="Derecho Civil y Mercantil"
+            />
+          </div>
+          <div class="servicio-info">
+            <h4>DERECHO CIVIL Y MERCANTIL</h4>
+            <div class="linea-decorativa2"></div>
+            <p class="intro">
+              Defendemos tus derechos en relaciones entre particulares,
+              contratos y obligaciones legales.
+            </p>
+            <ul>
+              <li>Juicios de arrendamiento y recuperación de inmuebles</li>
+              <li>Juicios hipotecarios, ejecutivos, títulos de crédito</li>
+              <li>Convenios judiciales y extrajudiciales</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Servicio 3: Derecho Laboral -->
+        <div class="servicio-min-card">
+          <div class="servicio-img">
+            <img
+              src="https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2024/08/laboral-ley-j.jpg?fit=1100%2C732&ssl=1"
+              alt="Derecho Laboral"
+            />
+          </div>
+          <div class="servicio-info">
+            <h4>DERECHO LABORAL</h4>
+            <div class="linea-decorativa2"></div>
+            <p class="intro">
+              Protegemos tus derechos como trabajador o empleador ante
+              conflictos laborales.
+            </p>
+            <ul>
+              <li>Despidos injustificados, finiquitos y pensiones</li>
+              <li>Accidentes laborales y representación empresarial</li>
+              <li>Asesoría en inspecciones y cumplimiento legal</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Servicio 4: Derecho Familiar -->
+        <div class="servicio-min-card reverse">
+          <div class="servicio-img">
+            <img
+              src="https://images.unsplash.com/photo-1609220136736-443140cffec6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGVyZWNobyUyMGRlJTIwZmFtaWxpYXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Derecho Familiar"
+            />
+          </div>
+          <div class="servicio-info">
+            <h4>DERECHO FAMILIAR</h4>
+            <div class="linea-decorativa2"></div>
+            <p class="intro">
+              Atendemos conflictos familiares con enfoque humano y legalmente
+              sólido.
+            </p>
+            <ul>
+              <li>Divorcio, patria potestad y pensión alimenticia</li>
+              <li>Juicios sucesorios y reconocimiento de paternidad</li>
+              <li>Concubinato y rectificación de actas</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Servicio 5: Derecho Penal -->
+        <div class="servicio-min-card">
+          <div class="servicio-img">
+            <img
+              src="https://images.pexels.com/photos/10475037/pexels-photo-10475037.jpeg"
+              alt="Derecho Penal"
+            />
+          </div>
+          <div class="servicio-info">
+            <h4>DERECHO PENAL</h4>
+            <div class="linea-decorativa2"></div>
+            <p class="intro">
+              Defensa legal integral para imputados o víctimas en procesos
+              penales.
+            </p>
+            <ul>
+              <li>Denuncias, querellas y defensa legal</li>
+              <li>Representación en MP y juzgados (local y federal)</li>
+              <li>Ejecución de sanciones</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Servicio 6: Justicia Penal para Adolescentes -->
+        <div class="servicio-min-card reverse">
+          <div class="servicio-img">
+            <img
+              src="https://images.unsplash.com/photo-1569617084133-26942bb441f2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3J1cG8lMjBkZSUyMGFkb2xlc2NlbnRlc3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="Justicia Penal para Adolescentes"
+            />
+          </div>
+          <div class="servicio-info">
+            <h4>SISTEMA DE JUSTICIA PENAL PARA ADOLESCENTES</h4>
+            <div class="linea-decorativa2"></div>
+            <p class="intro">
+              Defensa especializada y protección de derechos de adolescentes en
+              conflicto con la ley.
+            </p>
+            <ul>
+              <li>Denuncias y representación de víctimas</li>
+              <li>Defensa en juzgados especializados</li>
+              <li>Ejecución de sanciones</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de mapa -->
+    <section id="ubicacion" class="seccion-mapa">
+      <div class="container col-md-9">
+        <div class="contenedor-titulos-secciones">
+          <h2 class="titulo-secciones">NUESTRA UBICACIÓN</h2>
+          <div class="linea-decorativa2"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Mapa -->
+          <div class="col-lg-8">
+            <div class="mapa-horizontal-wrapper">
+              <iframe
+                class="mapa-horizontal"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15048.057446601288!2d-99.1277758!3d19.4807581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f91639518187%3A0xbee03233e5056cf6!2sCONSULTOR%C3%8DA%20JUR%C3%8DDICA%20INTEGRAL%20KLEOS%20S.%20A%20DE%20C.%20V.!5e0!3m2!1ses!2smx!4v1719870800001!5m2!1ses!2smx"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Información de contacto -->
+          <div class="col-lg-4">
+            <div class="contact-info-box">
+              <h3 class="contact-info-title">INFORMACIÓN</h3>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="contact-text">
+                  <h5>DIRECCIÓN</h5>
+                  <p>
+                    Av. Instituto Politécnico Nacional 2580<br />
+                    Gustavo A. Madero, CDMX
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="contact-text">
+                  <h5>TELÉFONO</h5>
+                  <p>
+                    (55) 1234 5678<br />
+                    800 123 4567 Lada sin costo
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="contact-text">
+                  <h5>EMAIL</h5>
+                  <p>contacto@kleos.mx</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <i class="bi bi-clock-fill"></i>
+                </div>
+                <div class="contact-text">
+                  <h5>HORARIO</h5>
+                  <p>
+                    Lunes a Viernes: 9:00 AM - 6:00 PM<br />
+                    Sábados: 10:00 AM - 2:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-minimalista">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>KLEOS</h3>
+            <p>Consultoría Jurídica Integral</p>
+          </div>
+
+          <div class="footer-contact">
+            <p><i class="bi bi-telephone-fill"></i> (55) 1234 5678</p>
+            <p><a href="https://www.kleos-legal.com">www.kleos-legal.com</a></p>
+          </div>
+
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p>© 2023 Kleos. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animación al hacer scroll -->
+    <script>
+      function mostrarAbogadosConAnimacion() {
+        const wrappers = document.querySelectorAll(".abogado-wrapper");
+        const triggerBottom = window.innerHeight * 0.85;
+
+        wrappers.forEach((wrapper) => {
+          const rect = wrapper.getBoundingClientRect();
+          if (rect.top < triggerBottom && rect.bottom > 0) {
+            wrapper.classList.add("abogado-visible");
+          } else {
+            wrapper.classList.remove("abogado-visible");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", mostrarAbogadosConAnimacion);
+      window.addEventListener("load", mostrarAbogadosConAnimacion);
+    </script>
+  </body>
+</html>

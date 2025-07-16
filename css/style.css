@@ -1,0 +1,670 @@
+/* ===== ESTILOS GENERALES ===== */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #333;
+  font-family: "Playfair Display", serif;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.926) 40%,
+    rgba(0, 0, 0, 0.681) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 150px;
+  padding: 0 20px;
+  z-index: 1000;
+  position: absolute;
+  width: 100vw;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.123);
+  padding-left: 10px;
+  width: 160px;
+  display: flex;
+  justify-self: center;
+}
+
+.nav-link:hover {
+  color: #dfb26f !important;
+}
+
+.navbar-brand {
+  pointer-events: auto;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #000000ea;
+  border: 1px solid #33333300;
+  width: 150px;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  white-space: normal !important;
+  border-bottom: 1px solid #dfb26f16;
+  height: fit-content;
+}
+
+.dropdown-item:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease;
+  padding: 0;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255, 255, 255, 0.6%29' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-toggler {
+  position: absolute;
+  left: 90% !important;
+  top: 0px;
+  border: none !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  z-index: 1300;
+}
+
+/* ===== CARRUSEL ===== */
+#carouselExampleIndicators,
+#carouselExampleIndicators .carousel-inner,
+#carouselExampleIndicators .carousel-item,
+#carouselExampleIndicators .carousel-item img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.148);
+}
+
+.carousel-item {
+  transition: transform 1.5s ease-in-out !important;
+  position: relative;
+}
+
+/* Controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+
+/* Textos del carrusel */
+.titulo-carrusel {
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: "Playfair Display", serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+}
+
+.slogan-carrusel {
+  width: 90vw;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  color: #ac9670;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.linea-decorativa {
+  width: 30%;
+  height: 1px;
+  background-color: #ac9670;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+
+/* ===== SECCIÓN PRESENTACIÓN ===== */
+.seccion-presentacion {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  margin: 50px;
+  padding: 100px;
+}
+
+.titulo-seccion-presentacion {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.texto-presentacion {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.linea-decorativa2 {
+  width: 60px;
+  height: 3px;
+  background-color: #ac9670;
+  opacity: 0.8;
+}
+
+/* ===== SECCIÓN ABOGADOS ===== */
+#abogados-barra {
+  background-image: url("/img/Pillar.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 0px;
+  width: auto;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000000;
+  box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.148);
+}
+
+#abogados-barra .row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.abogado-circle {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.372);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abogado-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 5%;
+  display: block;
+  filter: grayscale(100);
+}
+
+.abogado-card {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  background-color: #00000028;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.098);
+}
+
+.abogado-nombre {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #0000008d;
+}
+
+.abogado-descripcion {
+  color: rgb(255, 255, 255);
+}
+
+/* ===== SECCIÓN SERVICIOS ===== */
+.servicio-min-card {
+  max-width: 950px;
+  height: 350px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.servicio-min-card:hover {
+  transform: translateY(-4px);
+}
+
+.servicio-img {
+  flex: 0 0 45%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.servicio-img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+.servicio-info {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.servicio-info h4 {
+  font-family: "Playfair Display", serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.servicio-info .intro {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.servicio-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Alternar imagen a la derecha */
+.servicio-min-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ===== SECCIÓN MAPA ===== */
+.seccion-mapa {
+  background-image: url("/img/location.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+  background-image: none;
+}
+
+.contact-info-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.contact-info-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ac9670;
+}
+
+.contact-info-item {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ac9670;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.contact-icon i {
+  font-size: 1rem;
+}
+
+.contact-text h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ac9670;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Mapa horizontal */
+.mapa-horizontal-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mapa-horizontal {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ===== ELEMENTOS COMUNES ===== */
+.contenedor-titulos-secciones {
+  padding-top: 50px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.titulo-secciones {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+/* Botón de contacto */
+.btn-contact {
+  background-color: #ac9670;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+  background-color: #c89a50;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+.footer-minimalista {
+  background-image: url("/img/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+  color: #ac9670;
+  padding: 40px 0 20px;
+  font-family: "Playfair Display", serif;
+  border-top: 1px solid #333;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-brand h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact a {
+  color: #ac9670;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-contact a:hover {
+  opacity: 0.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #ac9670;
+  font-size: 1.3rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px);
+  color: #dfb26f;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 991.98px) {
+  .seccion-presentacion {
+    margin: 35px !important;
+    padding: 0px !important;
+  }
+
+  #carouselExampleIndicators,
+  #carouselExampleIndicators .carousel-inner,
+  #carouselExampleIndicators .carousel-item,
+  #carouselExampleIndicators .carousel-item img {
+    height: 95vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 76% center;
+  }
+
+  .carousel-item img {
+    filter: brightness(0.5) !important;
+  }
+
+  .navbar {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.75) 25%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.35) 75%,
+      rgba(0, 0, 0, 0.1) 90%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    height: 100px;
+    position: fixed;
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.723);
+    height: fit-content;
+    padding: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    right: 5px;
+    z-index: 1200;
+  }
+
+  .nav-link {
+    width: 100% !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 12px 0 !important;
+    justify-content: flex-start !important;
+    text-align: left;
+  }
+
+  .nav-link:last-child {
+    border-bottom: none !important;
+  }
+
+  .dropdown-menu {
+    background-color: #111 !important;
+    margin-left: 15px;
+    width: calc(100% - 30px);
+    border: none;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    z-index: 1002;
+  }
+
+  /* Responsive para sección mapa */
+  .seccion-mapa {
+    padding: 60px 0;
+  }
+
+  .contact-info-box {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .seccion-mapa .row {
+    flex-direction: column;
+  }
+
+  .seccion-mapa .col-md-6 {
+    width: 100%;
+  }
+
+  .mapa-wrapper {
+    min-height: 300px;
+  }
+  .map-style {
+    height: 250px;
+  }
+
+  .servicio-min-card,
+  .servicio-min-card.reverse {
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .servicio-info {
+    padding: 20px;
+  }
+
+  /* Responsive para items de contacto */
+  .contact-info-item {
+    flex-direction: column;
+  }
+
+  .contact-icon {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .abogado-circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .abogado-name {
+    font-size: 0.85rem;
+  }
+
+  .abogado-area {
+    font-size: 0.7rem;
+  }
+
+  .mapa-horizontal {
+    height: 250px;
+  }
+
+  .info-title {
+    font-size: 1.1rem;
+  }
+
+  .info-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mantener el logo centrado en desktop */
+@media (min-width: 992px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive para footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-contact p {
+    justify-content: center;
+  }
+}
