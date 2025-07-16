@@ -96,6 +96,17 @@ body {
   background-color: rgba(255, 255, 255, 0) !important;
   z-index: 1300;
 }
+/* Eliminar el borde negro del botón hamburguesa en mobile */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Opcional: mejorar el estilo del botón hamburguesa en mobile */
+.custom-toggler {
+  border: none !important;
+  background-color: transparent !important;
+}
 
 /* ===== CARRUSEL ===== */
 #carouselExampleIndicators,
@@ -265,6 +276,7 @@ body {
   width: 100%;
   height: 350px;
   object-fit: cover;
+  object-position: center;
   filter: grayscale(20%);
 }
 
@@ -304,6 +316,40 @@ body {
 /* Alternar imagen a la derecha */
 .servicio-min-card.reverse {
   flex-direction: row-reverse;
+}
+/* Estilos para el botón Saber más */
+.btn-saber-mas {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ac9670;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+
+.btn-saber-mas:hover {
+  color: #8a6d3b;
+  border-bottom-color: #ac9670;
+  transform: translateX(5px);
+}
+
+/* Ajustar el espacio en las tarjetas de servicio */
+.servicio-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Cambiado de center a space-between */
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .btn-saber-mas {
+    margin-top: 20px;
+    align-self: center;
+  }
 }
 
 /* ===== SECCIÓN MAPA ===== */
@@ -528,7 +574,7 @@ body {
   }
 
   .navbar-collapse {
-    background: rgba(0, 0, 0, 0.723);
+    background: rgba(0, 0, 0, 0.899);
     height: fit-content;
     padding: 50px;
     padding-top: 10px;
@@ -543,9 +589,13 @@ body {
 
   .nav-link {
     width: 100% !important;
-    border: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    padding: 12px 0 !important;
+    margin-bottom: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.196);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px !important;
     justify-content: flex-start !important;
     text-align: left;
   }
@@ -602,7 +652,7 @@ body {
   .servicio-min-card,
   .servicio-min-card.reverse {
     flex-direction: column;
-    height: 500px;
+    height: auto;
   }
 
   .servicio-info {
