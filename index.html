@@ -67,7 +67,12 @@
             src="img/logo-h.png"
             alt="Logo"
             class="d-lg-none"
-            style="height: 70px; margin-top: 0px; margin-left: 20px"
+            style="
+              height: 70px;
+              margin-top: 0px;
+              margin-left: 20px;
+              z-index: 1201 !important;
+            "
           />
         </a>
 
@@ -87,7 +92,7 @@
                 style="color: #ac9670 !important; border: none !important"
                 >INICIO</a
               >
-              <a class="nav-link" href="#presentacion">NOSOTROS</a>
+              <a class="nav-link" href="#Nosotros">NOSOTROS</a>
               <div class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -138,7 +143,6 @@
             <div
               class="d-flex flex-column flex-lg-row justify-content-evenly flex-grow-1"
             >
-              <a class="nav-link" href="#ubicacion">UBICACIÓN</a>
               <div class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -152,15 +156,25 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
                   <li>
-                    <a class="dropdown-item" href="#"> CONTABILIDAD</a>
+                    <a class="dropdown-item" href="#ABOGADOS">
+                      ABOGADOS ASOCIADOS</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      PROGRAMACIÓN E INFORMATICA</a
+                    <a class="dropdown-item" href="#PERITOS"> PERITOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#CONTABILIDAD">
+                      CONTABILIDAD</a
                     >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#TECNOLOGÍA"> TECNOLOGÍA</a>
                   </li>
                 </ul>
               </div>
+              <a class="nav-link" href="#ubicacion">UBICACIÓN</a>
+
               <a class="nav-link" href="#">CASOS DE EXÍTO</a>
             </div>
           </div>
@@ -264,7 +278,7 @@
       </button>
     </div>
     <!-- Sección Presentación -->
-    <section id="presentacion" class="seccion-presentacion py-5">
+    <section id="Nosotros" class="seccion-presentacion py-5">
       <div class="container">
         <div class="row align-items-center g-5">
           <!-- Texto -->
@@ -327,10 +341,20 @@
               defensa y litigio estratégico.
             </p>
             <p class="mb-1">
-              <i class="bi bi-telephone-fill me-2"></i> (55) 9876 5432
+              <i class="bi bi-telephone-fill me-2"></i>
+              <a
+                href="tel:+525528648261"
+                class="text-white abogados-text-decoration"
+                >55 2864 8261</a
+              >
             </p>
             <p>
-              <i class="bi bi-envelope-fill me-2"></i> cesar.castillo@kleos.mx
+              <i class="bi bi-envelope-fill me-2"></i>
+              <a
+                class="text-white abogados-text-decoration"
+                href="mailto:juridico.lex1@gmail.com"
+                >juridico.lex1@gmail.com</a
+              >
             </p>
           </div>
         </div>
@@ -354,17 +378,29 @@
               bienestar legal de nuestros clientes.
             </p>
             <p class="mb-1">
-              <i class="bi bi-telephone-fill me-2"></i> (55) 1122 3344
+              <i class="bi bi-telephone-fill me-2"></i>
+              <a
+                href="tel:+525563179179"
+                class="text-white abogados-text-decoration"
+                >55 6317 9179</a
+              >
             </p>
             <p>
-              <i class="bi bi-envelope-fill me-2"></i> nadia.hernandez@kleos.mx
+              <i class="bi bi-envelope-fill me-2"></i>
+              <a
+                class="text-white abogados-text-decoration"
+                href="mailto: juridico.nadiahernandez@gmail.com"
+              >
+                juridico.nadia <br />
+                hernandez@gmail.com</a
+              >
             </p>
           </div>
         </div>
       </div>
     </section>
     <!-- Sección Servicios -->
-    <section id="servicios" class="container py-5">
+    <section id="servicios" class="container">
       <div class="contenedor-titulos-secciones">
         <h2 class="titulo-secciones">SERVICIOS QUE SE BRINDAN</h2>
         <div class="linea-decorativa2 mb-4"></div>
@@ -376,7 +412,7 @@
 
       <div class="d-flex flex-column align-items-center gap-4">
         <!-- Servicio 1: Asesoría Corporativa -->
-        <div class="servicio-min-card">
+        <div id="Asesoria-Corp" class="servicio-min-card">
           <div class="servicio-img">
             <img
               src="https://images.pexels.com/photos/23496879/pexels-photo-23496879.jpeg?cs=srgb&dl=pexels-silverkblack-23496879.jpg&fm=jpg"
@@ -402,7 +438,7 @@
         </div>
 
         <!-- Servicio 2: Derecho Civil y Mercantil -->
-        <div class="servicio-min-card reverse">
+        <div id="Civil-mercantil" class="servicio-min-card reverse">
           <div class="servicio-img">
             <img
               src="https://png.pngtree.com/thumb_back/fw800/background/20240705/pngtree-real-estate-agent-holding-house-model-in-his-hands-concept-image_15951775.jpg"
@@ -426,7 +462,7 @@
         </div>
 
         <!-- Servicio 3: Derecho Laboral -->
-        <div class="servicio-min-card">
+        <div id="derecho-laboral" class="servicio-min-card">
           <div class="servicio-img">
             <img
               src="https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2024/08/laboral-ley-j.jpg?fit=1100%2C732&ssl=1"
@@ -450,7 +486,7 @@
         </div>
 
         <!-- Servicio 4: Derecho Familiar -->
-        <div class="servicio-min-card reverse">
+        <div id="derecho-familiar" class="servicio-min-card reverse">
           <div class="servicio-img">
             <img
               src="https://images.unsplash.com/photo-1609220136736-443140cffec6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGVyZWNobyUyMGRlJTIwZmFtaWxpYXxlbnwwfHwwfHx8MA%3D%3D"
@@ -474,7 +510,7 @@
         </div>
 
         <!-- Servicio 5: Derecho Penal -->
-        <div class="servicio-min-card">
+        <div id="derecho-penal" class="servicio-min-card">
           <div class="servicio-img">
             <img
               src="https://images.pexels.com/photos/10475037/pexels-photo-10475037.jpeg"
@@ -498,7 +534,7 @@
         </div>
 
         <!-- Servicio 6: Justicia Penal para Adolescentes -->
-        <div class="servicio-min-card reverse">
+        <div id="adolecentes" class="servicio-min-card reverse">
           <div class="servicio-img">
             <img
               src="https://images.unsplash.com/photo-1569617084133-26942bb441f2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3J1cG8lMjBkZSUyMGFkb2xlc2NlbnRlc3xlbnwwfHwwfHx8MA%3D%3D"
@@ -524,10 +560,10 @@
     </section>
     <!-- Sección Asociados -->
     <section id="asociados" class="container mb-5 col-md-9">
-      <div class="contenedor-titulos-secciones">
+      <div class="contenedor-titulos-secciones pb-4">
         <h2 class="titulo-secciones">ASOCIADOS</h2>
-        <div class="linea-decorativa2 mb-3"></div>
-        <p class="col-md-8 mx-auto text-center mb-5">
+        <div class="linea-decorativa2 mb-4"></div>
+        <p class="col-md-10">
           Colaboradores especializados que complementan nuestro servicio
           jurídico integral
         </p>
@@ -536,7 +572,7 @@
       <div class="row g-4">
         <!-- Columna de Abogados Asociados -->
         <div class="col-md-6">
-          <div class="asociados-card">
+          <div id="#ABOGADOS" class="asociados-card">
             <h4 class="asociados-subtitulo mb-3">ABOGADOS ASOCIADOS</h4>
             <div class="d-flex flex-column gap-2">
               <div class="asociado-item">
@@ -564,7 +600,7 @@
 
         <!-- Columna de Periciales -->
         <div class="col-md-6">
-          <div class="asociados-card">
+          <div id="PERITOS" class="asociados-card">
             <h4 class="asociados-subtitulo mb-3">PERICIALES</h4>
             <div class="d-flex flex-wrap gap-2">
               <span class="pericial-badge">Genética</span>
@@ -581,7 +617,7 @@
 
         <!-- Servicios Adicionales -->
         <div class="col-md-6">
-          <div class="asociados-card">
+          <div id="CONTABILIDAD" class="asociados-card">
             <h4 class="asociados-subtitulo mb-3">CONTABILIDAD</h4>
             <p class="asociado-nombre">C.P. José Alberto Conde Flores</p>
             <p class="asociado-descripcion">
@@ -591,11 +627,13 @@
         </div>
 
         <div class="col-md-6">
-          <div class="asociados-card">
+          <div id="TECNOLOGÍA" class="asociados-card">
             <h4 class="asociados-subtitulo mb-3">TECNOLOGÍA</h4>
-            <p class="asociado-nombre">Adán Silva Zamora</p>
+            <p class="asociado-nombre">ING. Adán Silva Zamora</p>
             <p class="asociado-descripcion">
-              Ingeniero en Tecnologías de la Información y Comunicaciones
+              Desarrollo de software y aplicaciones, administración de redes,
+              ciberseguridad, manejo de bases de datos e inteligencia
+              artificial.
             </p>
           </div>
         </div>
@@ -635,8 +673,9 @@
                 <div class="contact-text">
                   <h5>DIRECCIÓN</h5>
                   <p>
-                    Av. Instituto Politécnico Nacional 2580<br />
-                    Gustavo A. Madero, CDMX
+                    Avenida Insurgentes Norte ·1655, Oficina 202, Col.
+                    Industrial, Alcaldía Gustavo A. Madero, C.P. 07800, Ciudad
+                    de México.
                   </p>
                 </div>
               </div>
@@ -648,8 +687,8 @@
                 <div class="contact-text">
                   <h5>TELÉFONO</h5>
                   <p>
-                    (55) 1234 5678<br />
-                    800 123 4567 Lada sin costo
+                    (55) 5781 8097 <br />
+                    (55) 5781 8102
                   </p>
                 </div>
               </div>
@@ -660,7 +699,11 @@
                 </div>
                 <div class="contact-text">
                   <h5>EMAIL</h5>
-                  <p>contacto@kleos.mx</p>
+                  <p>
+                    juridico.nadiahe <br />
+                    rnandez@gmail.com <br />
+                    juridico.lex1@gmail.com
+                  </p>
                 </div>
               </div>
 
@@ -690,12 +733,18 @@
           </div>
 
           <div class="footer-contact">
-            <p><i class="bi bi-telephone-fill"></i> (55) 1234 5678</p>
+            <p>
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+525557818097">(55) 5781 8097</a> |
+              <a href="tel:+525557818102">(55) 5781 8102 </a>
+            </p>
             <p><a href="https://www.kleos-legal.com">www.kleos-legal.com</a></p>
           </div>
 
           <div class="footer-social">
-            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100078437160688"
+              ><i class="bi bi-facebook"></i
+            ></a>
 
             <a href="#"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -703,7 +752,7 @@
         </div>
 
         <div class="footer-copyright">
-          <p>© 2023 Kleos. Todos los derechos reservados.</p>
+          <p>© 2025 Kleos. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
