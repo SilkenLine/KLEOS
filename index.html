@@ -66,12 +66,18 @@
           <img
             src="img/logo-h.png"
             alt="Logo"
+            id="mobile-logo"
             class="d-lg-none"
             style="
-              height: 70px;
-              margin-top: 0px;
-              margin-left: 20px;
               z-index: 1201 !important;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+              position: fixed;
+              height: 70px;
+              margin-top: -7%;
+
+              margin-left: 130px;
+              transform: translateX(-50%);
             "
           />
         </a>
@@ -220,6 +226,17 @@
           <div
             class="position-absolute top-50 start-50 translate-middle text-center text-white px-3"
           >
+            <div class="d-md-none" style="width: 100%">
+              <img
+                src="img/centered-phone-img.png"
+                style="
+                  height: 65%;
+                  width: 65%;
+                  object-fit: cover;
+                  margin-bottom: 20px;
+                "
+              />
+            </div>
             <div class="linea-decorativa mb-3"></div>
             <h1 class="titulo-carrusel d-none d-md-block">
               Consultoría Jurídica Integral <br />KLEOS
@@ -282,13 +299,17 @@
       <div class="container">
         <div class="row align-items-center g-5">
           <!-- Texto -->
-          <div class="col-md-6">
+          <div class="col-md-6" style="
+          background-image: url(img/logo-black.png);
+         background-size: cover;
+         background-position: left;
+          ">
             <h2 class="titulo-seccion-presentacion mb-3">NUESTRA FIRMA</h2>
             <div class="linea-decorativa2 mb-4"></div>
             <p class="texto-presentacion">
               En
               <strong>CONSULTORÍA JURÍDICA INTEGRAL "KLEOS"</strong> ofrecemos
-              asesoría y representación jurídica con más de 10 años de
+              asesoría y representación jurídica con más de una década de
               experiencia en áreas como derecho civil, penal, familiar y
               mercantil.
             </p>
@@ -328,7 +349,7 @@
           <div class="col-md-3 text-center">
             <div class="abogado-circle mx-auto">
               <img
-                src="img/ABOGADOS/cesaria.jpg"
+                src="img/ABOGADOS/cesaria2.jpg"
                 alt="Mtro. César Castillo Nava"
               />
             </div>
@@ -337,8 +358,7 @@
             <h4 class="mb-1 abogado-nombre">Mtro. César Castillo Nava</h4>
 
             <p class="mb-2 abogado-descripcion">
-              Especialista en Derecho Penal con más de 10 años de experiencia en
-              defensa y litigio estratégico.
+             
             </p>
             <p class="mb-1">
               <i class="bi bi-telephone-fill me-2"></i>
@@ -356,6 +376,7 @@
                 >juridico.lex1@gmail.com</a
               >
             </p>
+      <a href="#" class="btn-saber-mas text-white">Curriculum →</a>
           </div>
         </div>
 
@@ -374,8 +395,7 @@
           <div class="col-md-8 me-md-1">
             <h4 class="mb-1 abogado-nombre">Lic. Nadia E. Hernández Fragoso</h4>
             <p class="mb-2 abogado-descripcion">
-              Especialista en Derecho Civil y Familiar, comprometida con el
-              bienestar legal de nuestros clientes.
+            
             </p>
             <p class="mb-1">
               <i class="bi bi-telephone-fill me-2"></i>
@@ -391,10 +411,11 @@
                 class="text-white abogados-text-decoration"
                 href="mailto: juridico.nadiahernandez@gmail.com"
               >
-                juridico.nadia <br />
+                juridico.nadia
                 hernandez@gmail.com</a
               >
             </p>
+              <a href="#" class="btn-saber-mas text-white">Curriculum →</a>
           </div>
         </div>
       </div>
@@ -411,33 +432,81 @@
       </div>
 
       <div class="d-flex flex-column align-items-center gap-4">
-        <!-- Servicio 1: Asesoría Corporativa -->
-        <div id="Asesoria-Corp" class="servicio-min-card">
+        <!-- Servicio 1: Derecho Penal -->
+        <div id="derecho-penal" class="servicio-min-card">
           <div class="servicio-img">
             <img
-              src="https://images.pexels.com/photos/23496879/pexels-photo-23496879.jpeg?cs=srgb&dl=pexels-silverkblack-23496879.jpg&fm=jpg"
-              alt="Asesoría Corporativa"
+              src="https://images.pexels.com/photos/10475037/pexels-photo-10475037.jpeg"
+              alt="Derecho Penal"
             />
           </div>
           <div class="servicio-info">
-            <h4>ASESORÍA CORPORATIVA</h4>
+            <h4>DERECHO PENAL (LOCAL Y FEDERAL)</h4>
             <div class="linea-decorativa2"></div>
             <p class="intro">
-              Asesoramiento legal para la correcta constitución, administración
-              y operación de empresas.
+              Defensa legal integral para imputados o víctimas en procesos
+              penales.
             </p>
             <ul>
-              <li>
-                Elaboración y modificación de estatutos y actas de asamblea
-              </li>
-              <li>Proyectos de fusión o escisión</li>
-              <li>Elaboración y revisión de contratos mercantiles</li>
+              <li>Denuncias, querellas y defensa legal</li>
+              <li>Representación en MP y juzgados (local y federal)</li>
+              <li>Ejecución de sanciones</li>
             </ul>
             <a href="#" class="btn-saber-mas">Saber más →</a>
           </div>
         </div>
 
-        <!-- Servicio 2: Derecho Civil y Mercantil -->
+        <!-- Servicio 2: Justicia Penal para Adolescentes -->
+        <div id="adolecentes" class="servicio-min-card reverse">
+          <div class="servicio-img">
+            <img
+              src="https://images.unsplash.com/photo-1569617084133-26942bb441f2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3J1cG8lMjBkZSUyMGFkb2xlc2NlbnRlc3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="Justicia Penal para Adolescentes"
+            />
+          </div>
+          <div class="servicio-info">
+            <h4>
+              SISTEMA DE JUSTICIA PENAL PARA ADOLESCENTES (LOCAL Y FEDERAL)
+            </h4>
+            <div class="linea-decorativa2"></div>
+            <p class="intro">
+              Defensa especializada y protección de derechos de adolescentes en
+              conflicto con la ley.
+            </p>
+            <ul>
+              <li>Denuncias y representación de víctimas</li>
+              <li>Defensa en juzgados especializados</li>
+              <li>Ejecución de sanciones</li>
+            </ul>
+            <a href="#" class="btn-saber-mas">Saber más →</a>
+          </div>
+        </div>
+
+        <!-- Servicio 3: Derecho Familiar -->
+        <div id="derecho-familiar" class="servicio-min-card">
+          <div class="servicio-img">
+            <img
+              src="https://images.unsplash.com/photo-1609220136736-443140cffec6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGVyZWNobyUyMGRlJTIwZmFtaWxpYXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Derecho Familiar"
+            />
+          </div>
+          <div class="servicio-info">
+            <h4>DERECHO FAMILIAR</h4>
+            <div class="linea-decorativa2"></div>
+            <p class="intro">
+              Atendemos conflictos familiares con enfoque humano y legalmente
+              sólido.
+            </p>
+            <ul>
+              <li>Divorcio, patria potestad y pensión alimenticia</li>
+              <li>Juicios sucesorios y reconocimiento de paternidad</li>
+              <li>Concubinato y rectificación de actas</li>
+            </ul>
+            <a href="#" class="btn-saber-mas">Saber más →</a>
+          </div>
+        </div>
+
+        <!-- Servicio 4: Derecho Civil y Mercantil -->
         <div id="Civil-mercantil" class="servicio-min-card reverse">
           <div class="servicio-img">
             <img
@@ -461,7 +530,7 @@
           </div>
         </div>
 
-        <!-- Servicio 3: Derecho Laboral -->
+        <!-- Servicio 5: Derecho Laboral -->
         <div id="derecho-laboral" class="servicio-min-card">
           <div class="servicio-img">
             <img
@@ -485,73 +554,27 @@
           </div>
         </div>
 
-        <!-- Servicio 4: Derecho Familiar -->
-        <div id="derecho-familiar" class="servicio-min-card reverse">
+        <!-- Servicio 6: Asesoría Corporativa -->
+        <div id="Asesoria-Corp" class="servicio-min-card reverse">
           <div class="servicio-img">
             <img
-              src="https://images.unsplash.com/photo-1609220136736-443140cffec6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGVyZWNobyUyMGRlJTIwZmFtaWxpYXxlbnwwfHwwfHx8MA%3D%3D"
-              alt="Derecho Familiar"
+              src="https://images.pexels.com/photos/23496879/pexels-photo-23496879.jpeg?cs=srgb&dl=pexels-silverkblack-23496879.jpg&fm=jpg"
+              alt="Asesoría Corporativa"
             />
           </div>
           <div class="servicio-info">
-            <h4>DERECHO FAMILIAR</h4>
+            <h4>ASESORÍA CORPORATIVA</h4>
             <div class="linea-decorativa2"></div>
             <p class="intro">
-              Atendemos conflictos familiares con enfoque humano y legalmente
-              sólido.
+              Asesoramiento legal para la correcta constitución, administración
+              y operación de empresas.
             </p>
             <ul>
-              <li>Divorcio, patria potestad y pensión alimenticia</li>
-              <li>Juicios sucesorios y reconocimiento de paternidad</li>
-              <li>Concubinato y rectificación de actas</li>
-            </ul>
-            <a href="#" class="btn-saber-mas">Saber más →</a>
-          </div>
-        </div>
-
-        <!-- Servicio 5: Derecho Penal -->
-        <div id="derecho-penal" class="servicio-min-card">
-          <div class="servicio-img">
-            <img
-              src="https://images.pexels.com/photos/10475037/pexels-photo-10475037.jpeg"
-              alt="Derecho Penal"
-            />
-          </div>
-          <div class="servicio-info">
-            <h4>DERECHO PENAL</h4>
-            <div class="linea-decorativa2"></div>
-            <p class="intro">
-              Defensa legal integral para imputados o víctimas en procesos
-              penales.
-            </p>
-            <ul>
-              <li>Denuncias, querellas y defensa legal</li>
-              <li>Representación en MP y juzgados (local y federal)</li>
-              <li>Ejecución de sanciones</li>
-            </ul>
-            <a href="#" class="btn-saber-mas">Saber más →</a>
-          </div>
-        </div>
-
-        <!-- Servicio 6: Justicia Penal para Adolescentes -->
-        <div id="adolecentes" class="servicio-min-card reverse">
-          <div class="servicio-img">
-            <img
-              src="https://images.unsplash.com/photo-1569617084133-26942bb441f2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3J1cG8lMjBkZSUyMGFkb2xlc2NlbnRlc3xlbnwwfHwwfHx8MA%3D%3D"
-              alt="Justicia Penal para Adolescentes"
-            />
-          </div>
-          <div class="servicio-info">
-            <h4>SISTEMA DE JUSTICIA PENAL PARA ADOLESCENTES</h4>
-            <div class="linea-decorativa2"></div>
-            <p class="intro">
-              Defensa especializada y protección de derechos de adolescentes en
-              conflicto con la ley.
-            </p>
-            <ul>
-              <li>Denuncias y representación de víctimas</li>
-              <li>Defensa en juzgados especializados</li>
-              <li>Ejecución de sanciones</li>
+              <li>
+                Elaboración y modificación de estatutos y actas de asamblea
+              </li>
+              <li>Proyectos de fusión o escisión</li>
+              <li>Elaboración y revisión de contratos mercantiles</li>
             </ul>
             <a href="#" class="btn-saber-mas">Saber más →</a>
           </div>
@@ -559,21 +582,18 @@
       </div>
     </section>
     <!-- Sección Asociados -->
-    <section id="asociados" class="container mb-5 col-md-9">
-      <div class="contenedor-titulos-secciones pb-4">
-        <h2 class="titulo-secciones">ASOCIADOS</h2>
-        <div class="linea-decorativa2 mb-4"></div>
-        <p class="col-md-10">
-          Colaboradores especializados que complementan nuestro servicio
-          jurídico integral
-        </p>
-      </div>
+    <section id="asociados" class="container mb-5 col-md-9 mt-5">
+      
 
       <div class="row g-4">
         <!-- Columna de Abogados Asociados -->
         <div class="col-md-6">
           <div id="#ABOGADOS" class="asociados-card">
-            <h4 class="asociados-subtitulo mb-3">ABOGADOS ASOCIADOS</h4>
+      <div class="contenedor-titulos-secciones pb-4">
+        <h2 class="titulo-secciones">ASOCIADOS</h2>
+        <div class="linea-decorativa2 mb-4"></div>
+       
+      </div>
             <div class="d-flex flex-column gap-2">
               <div class="asociado-item">
                 <p class="asociado-nombre mb-0">Lic. Nicolás Falcón Nava</p>
@@ -599,36 +619,66 @@
         </div>
 
         <!-- Columna de Periciales -->
+        
         <div class="col-md-6">
-          <div id="PERITOS" class="asociados-card">
-            <h4 class="asociados-subtitulo mb-3">PERICIALES</h4>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="pericial-badge">Genética</span>
-              <span class="pericial-badge">Grafoscopía</span>
-              <span class="pericial-badge">Psicología</span>
-              <span class="pericial-badge">Criminalística</span>
-              <span class="pericial-badge">Contabilidad</span>
-              <span class="pericial-badge">Fotografía</span>
-              <span class="pericial-badge">Identificación fisonómica</span>
-              <span class="pericial-badge">Medicina forense</span>
+          
+          <div id="#ABOGADOS" class="asociados-card">
+           <div class="contenedor-titulos-secciones pb-4">
+        <h2 class="titulo-secciones">PERICIALES</h2>
+        <div class="linea-decorativa2 mb-4"></div>
+       
+      </div>
+            <div class="d-flex flex-column gap-2">
+              <div class="asociado-item">
+                <p class="asociado-nombre mb-0">Genética</p>
+              </div>
+              <div class="asociado-item">
+                <p class="asociado-nombre mb-0">Grafoscopía</p>
+              </div>
+              <div class="asociado-item">
+                <p class="asociado-nombre mb-0">Psicología</p>
+              </div>
+              <div class="asociado-item">
+                <p class="asociado-nombre mb-0">Criminalística</p>
+              </div>
+              <div class="asociado-item">
+                <p class="asociado-nombre mb-0">Contabilidad</p>
+              </div>
+              <div class="asociado-item">
+                <p class="asociado-nombre mb-0">Fotografía</p>
+              </div>
+              <div class="asociado-item">
+                <p class="asociado-nombre mb-0">Identificación fisonómica</p>
+              </div>
+              <div class="asociado-item">Medicina forense</p>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Servicios Adicionales -->
+          
         <div class="col-md-6">
           <div id="CONTABILIDAD" class="asociados-card">
-            <h4 class="asociados-subtitulo mb-3">CONTABILIDAD</h4>
+             <div class="contenedor-titulos-secciones pb-4">
+        <h2 class="titulo-secciones">CONTABILIDAD</h2>
+        <div class="linea-decorativa2 mb-4"></div>
+       
+      </div>
             <p class="asociado-nombre">C.P. José Alberto Conde Flores</p>
             <p class="asociado-descripcion">
-              Especialista en contabilidad forense y auditoría legal
+              Especialista en Asesoría contable y fiscal para personas morales y fisicas, IMSS, INFONAVIT, nominas.
             </p>
           </div>
         </div>
 
         <div class="col-md-6">
           <div id="TECNOLOGÍA" class="asociados-card">
-            <h4 class="asociados-subtitulo mb-3">TECNOLOGÍA</h4>
+            <div class="contenedor-titulos-secciones pb-4">
+        <h2 class="titulo-secciones">TECNOLOGÍA</h2>
+        <div class="linea-decorativa2 mb-4"></div>
+       
+      </div>
             <p class="asociado-nombre">ING. Adán Silva Zamora</p>
             <p class="asociado-descripcion">
               Desarrollo de software y aplicaciones, administración de redes,
@@ -777,6 +827,31 @@
 
       window.addEventListener("scroll", mostrarAbogadosConAnimacion);
       window.addEventListener("load", mostrarAbogadosConAnimacion);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var $mobileLogo = $("#mobile-logo");
+        var $presentacionSection = $("#Nosotros");
+        var logoVisible = false;
+
+        $(window).scroll(function () {
+          var scrollPosition = $(window).scrollTop();
+          var sectionOffset = $presentacionSection.offset().top;
+          var triggerPoint = sectionOffset - 100; // 100px antes de llegar a la sección
+
+          if (scrollPosition > triggerPoint && !logoVisible) {
+            $mobileLogo.css("opacity", "1");
+            logoVisible = true;
+          } else if (scrollPosition <= triggerPoint && logoVisible) {
+            $mobileLogo.css("opacity", "0");
+            logoVisible = false;
+          }
+        });
+
+        // Para manejar el caso cuando la página se carga ya con scroll
+        $(window).trigger("scroll");
+      });
     </script>
   </body>
 </html>
